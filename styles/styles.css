@@ -32,6 +32,9 @@ body {
   width: 1200px;
 
 }
+.header {
+  border: 1px solid #ECECEC;
+}
 .header-container {
   justify-content: space-between;
   display: flex;
@@ -129,14 +132,15 @@ body {
 /* buttons */
 
 .btn {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  padding: 6px 22px;
+  border: 0;
   border-radius: 4px;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.06em;
-  background-color: var(--text-color3);
+  background-color: var(--background-color2);
   cursor: pointer;
 }
 .btn:hover, .btn:focus {
@@ -144,6 +148,8 @@ body {
   color: var(--text-color3);
 }
 .btn-hero {
+  color: var(--text-color3);
+  background-color: var(--brand-color);
   display: inline-block;
   padding: 10px 32px;
 }
@@ -245,19 +251,43 @@ footer {
 }
 
 /* projects */
+.filters {
+  display: flex;
+  justify-content: center;
+}
+.filters-item:not(:last-child) {
+  margin-right: 30px;
+}
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+.projects-item {
+  margin-bottom: 30px;
+  text-align: left;
+  padding-bottom: 20px;
+  border: 1px solid #EEEEEE;
+}
 
-.projects h3 {
+.project-link h3 {
+  
+  margin-left: 24px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  color: var(--text-color);
 }
-.projects p {
-  margin: 0;
+.project-link p {
+  margin-top: 0;
+  margin-left: 24px;
   font-size: 16px;
   line-height: 1.9;
   color: var(--text-color2);
 }
-.projects a {
+.project-link {
   text-decoration: none;
 }
