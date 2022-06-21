@@ -14,52 +14,58 @@
   </head>
   <body>
     <header>
-      <a class="name-page" href="./index.html">
-        <span class="brandcolor">Web</span>Studio</a
-      >
-      <nav>
-        <ul class="nav-list list">
-          <li><a class="navigation-studio" href="./index.html">Студия</a></li>
-          <li><a class="navigation-portfolio" href="./portfolio.html">Портфолио</a></li>
-          <li><a class="navigation-contacts" href="">Контакты</a></li>
+      <div class="container header-container">
+        <a class="name-page" href="./index.html">
+          <span class="brandcolor">Web</span>Studio</a>
+        <nav>
+          <ul class="nav-list list">
+            <li class="nav-item"><a class="navigation-studio" href="./index.html">Студия</a></li>
+            <li class="nav-item"><a class="navigation-portfolio" href="./portfolio.html">Портфолио</a></li>
+            <li class="nav-item"><a class="navigation-contacts" href="">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="contacts-list list">
+          <li><a class="mail-top" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          <li><a class="tel-top" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
-      </nav>
-      <ul class="contacts-list list">
-        <li><a class="mail-top" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a class="tel-top" href="tel:+380961111111">+38 096 111 11 11</a></li>
-      </ul>
+      </div>
     </header>
 
     <main>
       <section class="hero">
-        <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-        <button class="btn" type="button">Заказать услугу</button>
+        <div class="container hero-container">
+          <h1 class="hero-title">Эффективные решения<br> для вашего бизнеса</h1>
+          <button class="btn btn-hero" type="button">Заказать услугу</button>
+        </div>
       </section>
       <section class="skills">
+        <div class="container skills-container">
         <ul class="skills-list list">
-          <li class="skills-iten">
+          <li class="skills-item">
             <h3 class="skills-title">Внимание к деталям</h3>
             <p class="skills-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
           </li>
-          <li class="skills-iten">
+          <li class="skills-item">
             <h3 class="skills-title">Пунктуальность</h3>
             <p class="skills-text">
               Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
             </p>
           </li>
-          <li class="skills-iten">
+          <li class="skills-item">
             <h3 class="skills-title">Планирование</h3>
             <p class="skills-text">
               Равным образом консультация с широким активом в значительной степени обуславливает.
             </p>
-          </li class="skills-iten">
+          </li class="skills-item">
           <li>
             <h3 class="skills-title">Современные технологии</h3>
             <p class="skills-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
           </li>
         </ul>
+      </div>
       </section>
       <section class="work">
+        <div class="container work-container">
         <h2 class="work-title">Чем мы занимаемся</h2>
         <ul class="work-list list">
           <li class="work-item">
@@ -90,8 +96,10 @@
             />
           </li>
         </ul>
+        </div>
       </section>
       <section class="team">
+        <div class="container team-container">
         <h2 class="team-title">Наша команда</h2>
         <ul class="team-list list">
           <li class="person-item">
@@ -139,26 +147,22 @@
             <p class="person-work">UI Designer</p>
           </li>
         </ul>
+        </div>
       </section>
     </main>
 
     <footer>
-      <a class="name-page-bottom" href="./index.html"><span class="brandcolor">Web</span>Studio</a
-      ></a>
+      <div class="container footer-container">
+      <a class="name-page-bottom" href="./index.html"><span class="brandcolor">Web</span>Studio</a>
       <address>
         <ul class="address-list list">
-          <li>
-            <a class="address-google"
-              href="https://goo.gl/maps/GdrmN5GAiVvAwd8F9"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              г. Киев, пр-т Леси Украинки, 26</a
-            >
+          <li class="address-item"><a class="address-google" href="https://goo.gl/maps/GdrmN5GAiVvAwd8F9" target="_blank" rel="noopener noreferrer">
+              г. Киев, пр-т Леси Украинки, 26</a>
           </li>
-          <li><a class="mail-bottom" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a class="tel-bottom" href="tel:+380961111111">+38 096 111 11 11</a></li>
+          <li class="address-item"><a class="mail-bottom" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          <li class="address-item"><a class="tel-bottom" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
+      </div>
       </address>
     </footer>
   </body>
