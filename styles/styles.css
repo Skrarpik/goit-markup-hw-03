@@ -277,9 +277,7 @@ address {
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
-}
-.projects-item {
-  width: 370px;
+  flex-basis: calc((100%-60px) / 3);
 }
 
 .projects-img {
@@ -288,6 +286,8 @@ address {
 }
 
 .projects-descr {
+  font-size: 16px;
+  line-height: 1.9;
   padding-top: 20px;
   padding-left: 24px;
   padding-bottom: 20px;
@@ -301,6 +301,4 @@ address {
   color: var(--text-color);
 }
 .projects-text {
-  font-size: 16px;
-  line-height: 1.9;
 }
