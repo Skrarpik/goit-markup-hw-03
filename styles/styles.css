@@ -168,6 +168,9 @@ p {
   display: flex;
   height: 101px;
 }
+.skills-item:not(:last-child) {
+  margin-right: 30px;
+}
 .skills-title {
   margin-bottom: 10px;
   font-weight: 700;
