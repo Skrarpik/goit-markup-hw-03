@@ -9,25 +9,35 @@ body {
 }
 
 :root {
-  --brand-color: #2196F3;
+  --brand-color: #2196f3;
   --text-color: #212121;
   --text-color2: #757575;
   --text-color3: #fff;
   --background-color1: #fff;
-  --background-color2: #F5F4FA;
-  --background-color3: #2F303A;
-  --background-color4: #E5E5E5;
+  --background-color2: #f5f4fa;
+  --background-color3: #2f303a;
+  --background-color4: #e5e5e5;
 }
-
+h1,
+h2,
+h3,
+h4,
+ul,
+li,
+p {
+  padding: 0;
+  margin: 0;
+}
 .container {
   padding-left: 15px;
   padding-right: 15px;
-  padding-top: 94px;
-  padding-bottom: 94px;
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
-
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .link {
@@ -35,72 +45,79 @@ body {
   color: currentColor;
 }
 .list {
-  justify-content: space-between;
-  display: flex;
-  margin: 0;
-  padding: 0;
   list-style: none;
 }
 
 .header {
-  border-bottom: 1px solid #ECECEC;
+  border-bottom: 1px solid #ececec;
   font-weight: 500;
   line-height: 1.1;
-  
-
 }
 .header-container {
-  justify-content: space-between;
+  height: 80px;
   display: flex;
   align-items: center;
-  padding-top: 24px;
-  padding-bottom: 25px;
-  
 }
 .logo {
+  margin-right: 93px;
+  margin-top: 24px;
+  margin-bottom: 25px;
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-  color:var(--brand-color)
+  color: var(--brand-color);
 }
 
 .logo-black {
-  color: #000
+  color: #000;
 }
 .logo-white {
   color: var(--text-color3);
 }
-
-.nav-item:not(:last-child), .contacts-item:not(:last-child) {
+.nav-list {
+  display: flex;
+}
+.contacts-list {
+  display: flex;
+  margin-left: auto;
+}
+.nav-item:not(:last-child),
+.contacts-item:not(:last-child) {
   margin-right: 50px;
 }
-
+.nav-link,
+.contacts-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: inline-block;
+}
 .nav-link {
   color: var(--text-color);
 }
 
-.nav-link:hover, 
-.nav-link:focus, .contacts-link:hover,
+.nav-link:hover,
+.nav-link:focus,
+.contacts-link:hover,
 .contacts-link:focus {
   color: var(--brand-color);
 }
 
 .hero {
+  padding-bottom: 200px;
+  padding-top: 200px;
   color: var(--text-color3);
   background-color: var(--background-color3);
 }
 .hero-container {
   display: flex;
-  padding-bottom: 200px;
-  padding-top: 200px;
   align-items: center;
   flex-direction: column;
 }
 
 .hero-title {
-  margin-top: 0;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
@@ -121,9 +138,10 @@ body {
   cursor: pointer;
 }
 
-.btn-hero:hover, .btn-hero:focus {
+.btn-hero:hover,
+.btn-hero:focus {
   color: var(--text-color3);
-  background: #188CE8;
+  background: #188ce8;
 }
 
 .btn-filters {
@@ -137,35 +155,41 @@ body {
   background-color: var(--background-color2);
   color: var(--text-color);
 }
-.btn-filters:hover, .btn-filters:focus {
+.btn-filters:hover,
+.btn-filters:focus {
   color: var(--text-color3);
   background-color: var(--brand-color);
-  
 }
-.skills-item:not(:last-child) {
+
+.list-flex-space-between:not(:last-child) {
   margin-right: 30px;
 }
+.skills-list {
+  display: flex;
+  height: 101px;
+}
 .skills-title {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1;
   text-transform: uppercase;
   color: var(--text-color);
 }
-
 .skills-text {
-  margin-right: 0;
-  margin-bottom: 0;
+  width: 270px;
 }
-
-.work-container {
+.work {
   padding-top: 0;
+}
+.work-list {
+  display: flex;
+}
+.work-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .section-title {
-  margin-top: 0;
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -176,15 +200,24 @@ body {
 .team {
   background-color: var(--background-color2);
 }
+.team-list {
+  display: flex;
+}
+.team-item:not(:last-child) {
+  margin-right: 30px;
+}
 .team-item {
+  width: 270px;
+  padding-bottom: 30px;
   text-align: center;
   background-color: var(--background-color1);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  
 }
 .team-name {
   margin-top: 30px;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -197,17 +230,14 @@ body {
   color: var(--text-color2);
 }
 footer {
-  background-color: var(--background-color3);
-}
-.footer-container {
   padding-top: 60px;
   padding-bottom: 60px;
+  background-color: var(--background-color3);
 }
 address {
   font-style: inherit;
 }
 .address-list {
-  display: inline;
   font-size: 14px;
   line-height: 1.7;
 }
@@ -230,7 +260,9 @@ address {
   visibility: hidden;
   display: none;
 }
-.filters {
+
+.filters-list {
+  display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
@@ -238,23 +270,28 @@ address {
   margin-right: 9px;
 }
 .projects-list {
+  display: flex;
   flex-wrap: wrap;
 }
 .projects-item {
+  margin-right: 30px;
   margin-bottom: 30px;
-  text-align: left;
-  padding-bottom: 20px;
-  border: 1px solid #EEEEEE;
+  width: 370px;
 }
 .projects-item:nth-child(3n) {
   margin-right: 0;
 }
-.projects-item:nth-last-child(-n+3) {
+.projects-item:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
 
+.projects-descr {
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-bottom: 20px;
+  border: 1px solid #eeeeee;
+}
 .projects-title {
-  margin: 20px 0  0 24px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -262,8 +299,6 @@ address {
   color: var(--text-color);
 }
 .projects-text {
-  margin: 0  0  0 24px;
   font-size: 16px;
   line-height: 1.9;
 }
-
