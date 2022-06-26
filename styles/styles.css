@@ -278,6 +278,7 @@ address {
   padding: 20px 24px;
   font-size: 16px;
   line-height: 1.9;
+  border-top: none;
   border: 1px solid #eeeeee;
 }
 .projects-title {
