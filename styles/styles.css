@@ -28,6 +28,11 @@ p {
   padding: 0;
   margin: 0;
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -59,15 +64,15 @@ p {
   align-items: center;
 }
 .logo {
-  margin-right: 93px;
-  margin-top: 24px;
-  margin-bottom: 25px;
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   color: var(--brand-color);
+}
+.header .logo {
+  margin-right: 93px;
 }
 
 .logo-black {
@@ -91,16 +96,15 @@ p {
 .contacts-link {
   padding-top: 32px;
   padding-bottom: 32px;
-  display: inline-block;
+  display: flex;
+  align-items: center;
 }
 .nav-link {
   color: var(--text-color);
 }
 
-.nav-link:hover,
-.nav-link:focus,
-.contacts-link:hover,
-.contacts-link:focus {
+.hover-color:hover,
+.hover-color:focus {
   color: var(--brand-color);
 }
 
@@ -111,9 +115,7 @@ p {
   background-color: var(--background-color3);
 }
 .hero-container {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  text-align: center;
 }
 
 .hero-title {
@@ -121,7 +123,6 @@ p {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
@@ -142,9 +143,11 @@ p {
 .btn-hero:focus {
   color: var(--text-color3);
   background: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .btn-filters {
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.42;
   letter-spacing: 0.03em;
@@ -159,18 +162,19 @@ p {
 .btn-filters:focus {
   color: var(--text-color3);
   background-color: var(--brand-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.skills-item {
+  flex-basis: calc(100%-90px) / 4;
 }
 
-.list-flex-space-between:not(:last-child) {
-  margin-right: 30px;
-}
-.skills-list {
-  display: flex;
-  height: 101px;
-}
-.skills-item:not(:last-child) {
-  margin-right: 30px;
-}
 .skills-title {
   margin-bottom: 10px;
   font-weight: 700;
@@ -185,13 +189,9 @@ p {
 .work {
   padding-top: 0;
 }
-.work-list {
-  display: flex;
+.work-item {
+  flex-basis: calc(100%-60px) / 3;
 }
-.work-item:not(:last-child) {
-  margin-right: 30px;
-}
-
 .section-title {
   margin-bottom: 50px;
   font-weight: 700;
@@ -203,23 +203,18 @@ p {
 .team {
   background-color: var(--background-color2);
 }
-.team-list {
-  display: flex;
-}
-.team-item:not(:last-child) {
-  margin-right: 30px;
-}
 .team-item {
-  width: 270px;
-  padding-bottom: 30px;
+  flex-basis: calc(100%-90px) / 4;
   text-align: center;
   background-color: var(--background-color1);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+.team-wrapper {
+  padding: 30px 0;
+}
 .team-name {
-  margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -232,10 +227,14 @@ p {
   line-height: 1.19;
   color: var(--text-color2);
 }
-footer {
+.footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--background-color3);
+}
+.footer .logo {
+  display: block;
+  margin-bottom: 30px;
 }
 address {
   font-style: inherit;
@@ -249,12 +248,11 @@ address {
 }
 
 .address-link {
+  padding: 5px;
   color: rgba(255, 255, 255, 0.6);
 }
 
 .address-google {
-  display: inline-block;
-  margin-top: 20px;
   color: var(--text-color3);
 }
 
@@ -266,31 +264,20 @@ address {
 
 .filters-list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-}
-.filters-item:not(:last-child) {
-  margin-right: 9px;
-}
-.projects-list {
-  display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
+  gap: 9px;
+  margin-bottom: 50px;
+}
+
+.projects-link {
   flex-basis: calc((100%-60px) / 3);
 }
 
-.projects-img {
-  display: inline-block;
-  margin-bottom: -10px;
-}
-
-.projects-descr {
+.projects-wrapper {
+  padding: 20px 24px;
   font-size: 16px;
   line-height: 1.9;
-  padding-top: 20px;
-  padding-left: 24px;
-  padding-bottom: 20px;
   border: 1px solid #eeeeee;
 }
 .projects-title {
