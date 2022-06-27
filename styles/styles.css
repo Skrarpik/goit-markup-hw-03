@@ -172,7 +172,7 @@ img {
 }
 
 .skills-item {
-  flex-basis: calc(100%-90px) / 4;
+  flex-basis: calc((100% - 90px) / 4);
 }
 
 .skills-title {
@@ -190,7 +190,7 @@ img {
   padding-top: 0;
 }
 .work-item {
-  flex-basis: calc(100%-60px) / 3;
+  flex-basis: calc((100% - 60px) / 3);
 }
 .section-title {
   margin-bottom: 50px;
@@ -204,7 +204,7 @@ img {
   background-color: var(--background-color2);
 }
 .team-item {
-  flex-basis: calc(100%-90px) / 4;
+  flex-basis: calc((100% - 90px) / 4);
   text-align: center;
   background-color: var(--background-color1);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -270,8 +270,8 @@ address {
   margin-bottom: 50px;
 }
 
-.projects-link {
-  flex-basis: calc((100%-60px) / 3);
+.projects-item {
+  flex-basis: calc((100% - 60px) / 3);
 }
 
 .projects-wrapper {
